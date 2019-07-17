@@ -1,6 +1,5 @@
 package com.tw.apistackbase.entity;
 
-import org.springframework.boot.actuate.autoconfigure.info.ConditionalOnEnabledInfoContributor;
 
 import javax.persistence.*;
 
@@ -15,5 +14,9 @@ public class CaseDetail {
     private String objectiveElements;
     @Column(nullable = false)
     private String subjectiveElements;
+
+    @OneToOne
+    @JoinColumn(name = "criminal_case_id")
+    private CriminalCases criminalCases;
 
 }
