@@ -2,7 +2,6 @@ package com.tw.apistackbase.controller;
 
 import com.tw.apistackbase.entity.CriminalCases;
 import com.tw.apistackbase.service.CriminalCaseService;
-import com.tw.apistackbase.service.CriminalCaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +17,7 @@ import static java.util.Collections.reverse;
 public class CriminalCasesController {
 
     @Autowired
-    private CriminalCaseServiceImpl criminalCaseService;
+    private CriminalCaseService criminalCaseService;
 
     @GetMapping("/{id}")
     public CriminalCases findById(@PathVariable int id){
