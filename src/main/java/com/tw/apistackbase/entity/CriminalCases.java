@@ -22,5 +22,7 @@ public class CriminalCases {
         this.caseHappenTime = caseHappenTime;
     }
 
-    
+    public long getCaseHappenTime() {
+        return caseHappenTime;
+    }
 }
