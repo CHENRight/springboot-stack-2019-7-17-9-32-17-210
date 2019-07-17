@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "inquistor")
-public class Inquistor {
+public class Inquisitor {
 
     @Id
     @GeneratedValue
