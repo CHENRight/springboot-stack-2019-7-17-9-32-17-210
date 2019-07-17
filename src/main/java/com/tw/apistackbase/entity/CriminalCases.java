@@ -14,6 +14,11 @@ public class CriminalCases {
     @Column(nullable = false)
     private long caseHappenTime;
 
+    @OneToOne
+    private CaseDetail caseDetail;
+
+
+
     public CriminalCases() {
     }
 

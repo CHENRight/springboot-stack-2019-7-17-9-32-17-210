@@ -15,8 +15,6 @@ public class CaseDetail {
     @Column(nullable = false)
     private String subjectiveElements;
 
-    @OneToOne
-    @JoinColumn(name = "criminal_case_id")
-    private CriminalCases criminalCases;
+
 
 }
