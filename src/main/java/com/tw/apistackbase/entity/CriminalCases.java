@@ -25,4 +25,8 @@ public class CriminalCases {
     public long getCaseHappenTime() {
         return caseHappenTime;
     }
+
+    public String getName() {
+        return name;
+    }
 }
