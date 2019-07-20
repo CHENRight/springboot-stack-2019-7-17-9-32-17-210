@@ -25,11 +25,11 @@ public class CriminalCaseService {
         return casesRepository.findAll();
     }
 
-    List<CriminalCases> findByCaseName(String caseName){
-        return  casesRepository.findAllByName(caseName);
-    }
-
     public void delete(int id){
         casesRepository.deleteById(id);
+    }
+
+    public List<CriminalCases>  findAllByOrderByCaseHappenTimeDesc(){
+        return casesRepository.findAllByOrderByCaseHappenTimeDesc();
     }
 }

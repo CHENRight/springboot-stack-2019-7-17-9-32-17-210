@@ -7,8 +7,24 @@ import javax.persistence.*;
 public class Inquisitor {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(nullable = false)
     private String inquistorName;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getInquistorName() {
+        return inquistorName;
+    }
+
+    public void setInquistorName(String inquistorName) {
+        this.inquistorName = inquistorName;
+    }
 }
